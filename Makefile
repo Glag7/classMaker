@@ -7,7 +7,9 @@ HDR_DIR = includes/
 COMP = c++
 CPPFLAGS = -Wall -Wextra -Werror
 
-SRC = main.cpp
+SRC = main.cpp \
+      header.cpp \
+      header42.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
