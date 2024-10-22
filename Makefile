@@ -9,6 +9,7 @@ CPPFLAGS = -Wall -Wextra -Werror
 
 SRC = main.cpp \
       header.cpp \
+      source.cpp \
       header42.cpp
 
 OBJ = $(SRC:.cpp=.o)

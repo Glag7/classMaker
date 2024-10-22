@@ -6,7 +6,7 @@
 /*   By: glaguyon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 15:51:05 by glaguyon          #+#    #+#             */
-/*   Updated: 2024/10/22 19:42:25 by glag             ###   ########.fr       */
+/*   Updated: 2024/10/22 20:01:41 by glag             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ int	main(int argc, char **argv)
 	if (argc >= 4)
 		includes = argv[3];
 	createClassHeader(includes, name);
-	//createClassSrc();
+	createClassSource(src, name);
 }
