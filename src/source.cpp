@@ -6,7 +6,7 @@
 /*   By: glag <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:56:00 by glag              #+#    #+#             */
-/*   Updated: 2024/10/22 20:30:25 by glag             ###   ########.fr       */
+/*   Updated: 2024/10/24 17:03:04 by glaguyon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	createClassSource(std::string src, std::string name)
 	source	<< "#include <iostream>\n"
 		<< "#include \"" << name + ".hpp" << "\"\n\n"
 		<< name << "::" << name << "()\n{\n\tstd::cout << \"hello\\n\";\n}\n\n"
-		<< name << "::" << name << "(const &" << varName << ")\n{\n" 
+		<< name << "::" << name << "(" << name << " const &" << varName << ")\n{\n" 
 		<< "\t*this = " << varName << ";\n"
 		<< "\tstd::cout << \"hello hello\\n\";\n}\n\n"
 		<< name << " &" << name << "::operator=(" << name << " const &" << varName << ")\n{\n"
