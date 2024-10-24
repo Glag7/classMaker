@@ -37,7 +37,7 @@ void	createClassHeader(std::string includes, std::string name)
 	header42(header, filename);
 	header	<< "#ifndef " << headerProt << "\n"
 		<< "# define " << headerProt << "\n\n"
-		<< "Class " << name << "\n"
+		<< "class " << name << "\n"
 		<< "{\n\tpublic:\n"
 		<< "\t" << name << "();\n"
 		<< "\t" << name << "(" << name << " const &" << (char)std::tolower(name[0]) << ");\n"
